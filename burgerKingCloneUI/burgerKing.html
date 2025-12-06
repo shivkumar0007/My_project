@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger King Clone</title>
+
+      <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger King Clone</title>
+ 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navContainer">
+        <div class="logo">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/logo.png"
+            alt="logo"
+          />
+        </div>
+        <div class="deliveryButton">
+          <li style="background-color: white" class="Delevery">DELEVERY</li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#6e3c2f"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <!-- Switch background -->
+              <rect x="2" y="5" width="20" height="14" rx="7" fill="#6e3c2f" />
+
+              <!-- Knob -->
+              <circle cx="15" cy="12" r="5.5" fill="#ffffff" />
+            </svg>
+          </li>
+          <li>DINE-IN/TAKEAWAY</li>
+          <hr class="hr">
+        </div>
+        <div class="searchContainer">
+          <div class="searchContainerItem">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+            >
+              <!-- Clean filled pin (no overlapping paths) -->
+              <path
+                d="M12 2c-4.4 0-8 3.4-8 7.5c0 5.6 6.2 11 7.3 11.9c0.4 0.3 1 0.3 1.4 0
+           c1.1-0.9 7.3-6.3 7.3-11.9C20 5.4 16.4 2 12 2z"
+                fill="#6e3c2f"
+              />
+
+              <!-- White center -->
+              <circle cx="12" cy="10" r="3" fill="#ffffff" />
+            </svg>
+            No stores nearby
+          </div>
+        </div>
+        <div class="moreOption">
+          <li class="nearbyStore">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="rgb(130,130,130)"
+              stroke-width="2.25"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-store-icon lucide-store"
+            >
+              <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" />
+              <path
+                d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+              />
+              <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" />
+            </svg>
+            NEARBY STORES
+          </li>
+          <li class="deals">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="16"
+              height="16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.99 2.243a4.49 4.49 0 0 0-3.398 1.55 4.49 4.49 0 0 0-3.497 1.306 4.491 4.491 0 0 0-1.307 3.498 4.491 4.491 0 0 0-1.548 3.397c0 1.357.6 2.573 1.548 3.397a4.491 4.491 0 0 0 1.307 3.498 4.49 4.49 0 0 0 3.498 1.307 4.49 4.49 0 0 0 3.397 1.549 4.49 4.49 0 0 0 3.397-1.549 4.49 4.49 0 0 0 3.497-1.307 4.491 4.491 0 0 0 1.306-3.497 4.491 4.491 0 0 0 1.55-3.398c0-1.357-.601-2.573-1.549-3.397a4.491 4.491 0 0 0-1.307-3.498 4.49 4.49 0 0 0-3.498-1.307 4.49 4.49 0 0 0-3.396-1.549Zm3.53 7.28a.75.75 0 0 0-1.06-1.06l-6 6a.75.75 0 1 0 1.06 1.06l6-6Zm-5.78-.905a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Zm4.5 4.5a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            KING DEALS
+          </li>
+          <li class="login">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+              width="16"
+              height="16"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+              />
+            </svg>
+            LOGIN
+          </li>
+          <li class="cart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+              width="16px"
+              height="16px"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+            CART
+          </li>
+        </div>
+        <div class="SearchIcon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="rgb(115,65,52)"
+            class="size-6"
+            width="25px"
+            height="25px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <div class="maincontainer">
+      <img
+        style="width: 100%"
+        class="banner"
+        src="./image/Burger.jpeg"
+        alt=""
+      />
+    </div>
+
+    <div class="menu">
+      <div class="ourMenu">OUR MENU</div>
+      <div style="color: rgb(111, 60, 47)">See All ></div>
+    </div>
+    <div class="menuContainer">
+      <div class="menuContainerList">
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/takeOf combos.jpeg"
+            alt=""
+          />
+          <p>
+            Takes Off <br />
+            Combos
+          </p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/value.png"
+            alt=""
+          />
+          <p>
+            Value Meals <br />
+            Save Upto 47%
+          </p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/whoper.jpeg"
+            alt=""
+          />
+          <p>Whopper Deluxe (Reg.Size Bun)</p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/2ForOffer.jpeg"
+            alt=""
+          />
+          <p>2 for Offers</p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/celebrationt.jpeg"
+            alt=""
+          />
+          <p>CELEBRATION COMBO</p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/newPremium.jpeg"
+            alt=""
+          />
+          <p>New Premium Burgers</p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/valueMeals.jpeg"
+            alt=""
+          />
+          <p>Value Meals</p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/snacks.jpeg"
+            alt=""
+          />
+          <p>Snacks</p>
+        </div>
+        <div class="takeOfCombose">
+          <img
+            style="width: 100%; height: 100%"
+            src="./image/beverags.jpeg"
+            alt=""
+          />
+          <p>Beverages</p>
+        </div>
+      </div>
+    </div>
+    <div class="exploreFullMenu">
+      <p class="exploreFullMenuText">EXPLORE FULL MENU</p>
+    </div>
+    <div class="burgerBanner2">
+      <img style="width: 100%; height: 100%" src="./image/burger2.jpg" alt="" />
+    </div>
+    <div class="disclaimer">
+      <p style="font-weight: 900" class="disclaimerText">Disclaimer :</p>
+      All Images used are illustrative and strictly for representational
+      purposes only
+    </div>
+
+    <footer>
+      <div class="footeMain">
+      <div class="footer">
+        <div class="footerContainer">
+          <div class="bkInfo">
+            <p style="color: white; font-weight: 900">BK<sup>®</sup>INFO</p>
+            <div class="infoList">
+              <li>About BK<sup>®</sup></li>
+              <li>Fresh Taste</li>
+              <li>Investor Relations</li>
+              <li>Fssai</li>
+            </div>
+          </div>
+
+          <div class="bkInfo">
+            <p style="color: white; font-weight: 900">CONTACT</p>
+            <div class="infoList">
+              <li>FAQ's & Support</li>
+              <li>Write to us:</li>
+              <li>Careers</li>
+              <li>Customer Care</li>
+              <li>Supply Chain Queries</li>
+              <li>Investor Relations</li>
+              <li>Franchising</li>
+            </div>
+          </div>
+
+          <div class="bkInfo">
+            <p style="color: white; font-weight: 900">BK<sup>®</sup>CARES</p>
+            <div class="infoList">
+              <li>Nutrition Information</li>
+              <li>Creating Brighter Futures</li>
+              <li>Trust & Taste</li>
+              <li>COVID-19 Safety</li>
+            </div>
+          </div>
+
+          <div class="bkInfo">
+            <p style="color: white; font-weight: 900">LEGAL</p>
+            <div class="infoList">
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>Promotional T & C</li>
+            </div>
+          </div>
+
+          <div class="bkInfo">
+            <p style="color: white; font-weight: 900">DOWNLOAD OUR APP</p>
+            <div class="download">
+               <li><img src="./image/playStoredownload.png" alt=""></li>
+              <li style="margin-left: 10px;"><img src="./image/AppleStoredownload.png" alt=""></li>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+     <div class="line"></div>
+     <div class="navButtom">
+      <div class="navLog">
+        <img style="width: 100%; height: 100%;" src="./image/logoNav.png" alt="">
+      </div>
+      <div style="color: white; font-weight: 900; font-size: 0.7rem;">TM &<sup>©</sup> 2025 BURGER KING COMPANY LLC. All Rights Reserved.</div>
+      <div>
+  <ul class="social-icons">
+
+  <li>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+     
+      <circle cx="12" cy="12" r="11" fill="white"/>
+     
+      <path d="M7 10v4h3v7h4v-7h3l1-4h-4v-2a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2h-3z"
+            fill="none" stroke="rgb(50,50,49)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </li>
+
+  <li>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" fill="white"/>
+    
+      <rect x="4" y="4" width="16" height="16" rx="4" ry="4"
+            fill="none" stroke="rgb(50,50,49)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+     
+      <circle cx="12" cy="12" r="3" fill="none" stroke="rgb(50,50,49)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+   
+      <circle cx="16.5" cy="7.5" r="0.5" fill="rgb(50,50,49)"/>
+    </svg>
+  </li>
+
+
+  <li>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" fill="white"/>
+      <path d="M22 4.01c-.77.35-1.6.59-2.46.69a4.15 4.15 0 0 0 1.82-2.29c-.8.48-1.68.83-2.62 1.02A4.13 4.13 0 0 0 16 3c-2.28 0-4.13 1.85-4.13 4.13 0 .32.04.63.1.93C7.69 8.87 4.07 6.9 1.64 3.9c-.35.6-.55 1.3-.55 2.05 0 1.42.72 2.67 1.82 3.41a4.11 4.11 0 0 1-1.87-.52v.05c0 1.98 1.41 3.63 3.28 4.01a4.13 4.13 0 0 1-1.86.07c.53 1.66 2.07 2.87 3.89 2.9A8.28 8.28 0 0 1 2 19.54 11.68 11.68 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.35 8.35 0 0 0 22 4.01z"
+            fill="none" stroke="rgb(50,50,49)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </li>
+
+ 
+  <li>
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" fill="white"/>
+     
+      <path d="M21 12.2c0 1.9-.4 3.4-1.2 4.4-.9 1.1-2.3 1.6-4.8 1.6H9c-2.5 0-3.9-.5-4.8-1.6C3.6 15.6 3.2 14.1 3.2 12.2 3.2 10.3 3.6 8.8 4.4 7.8c.9-1.1 2.3-1.6 4.8-1.6h6.1c2.5 0 3.9.5 4.8 1.6.8 1 1.2 2.5 1.2 4.4z"
+            fill="none" stroke="rgb(50,50,49)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+      <path d="M10 9.5l5 2.5-5 2.5z" fill="rgb(50,50,49)"/>
+    </svg>
+  </li>
+</ul>
+      </div>
+     </div>
+     <p style="color: white;">This is a UI Clone for learning purpose — Not Official.
+</p>
+     </div>
+    </footer>
+  </body>
+</html>

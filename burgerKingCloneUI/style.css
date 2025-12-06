@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 246, 243);
+  overflow-x: hidden;
+font-family: "Cinzel", "Georgia", serif;
+font-weight: 900;
+}
+.navContainer {
+  width: 100%;
+  height: 75px; /* FIXED */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-weight: 900;
+}
+
+.logo {
+  width: 85px;
+  height: 85px;
+  margin-left: 70px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45%;
+  background-color: white;
+}
+.deliveryButton {
+  width: 25vw;
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 15px;
+  color: rgb(111, 60, 47);
+  background-color: rgb(255, 255, 255);
+}
+.Delevery {
+  color: rgb(153, 153, 153);
+}
+.hr {
+  transform: rotate(90deg);
+  width: 20px;
+  height: 0.1;
+  margin-left: 5px;
+}
+.searchContainer {
+  display: flex;
+  width: 20vw;
+  height: 35px;
+  align-items: center;
+  background-color: rgb(251, 250, 248);
+  border-radius: 25px 25px 25px 25px;
+}
+.searchContainer > .searchContainerItem {
+  margin-left: 30px;
+}
+.moreOption {
+  color: rgb(130, 130, 130);
+  width: 35vw;
+  font-weight: 900;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-left: 50px;
+}
+.SearchIcon {
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maincontainer {
+  width: 100%;
+  margin-top: 75px;
+}
+.menu {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+
+  margin: auto;
+  align-items: center;
+
+  padding: 20px 30px;
+  margin-top: 40px;
+}
+.ourMenu {
+  font-weight: 900;
+  font-size: 30px;
+}
+.menuContainer {
+  background: linear-gradient(
+    to bottom,
+    #f6e6d8 0%,
+    /* light peach */ #f4dfc9 25%,
+    /* creamy */ #f8f3ea 60%,
+    /* very light */ #ffffff 100% /* white */
+  );
+  display: flex;
+  width: 100%;
+  height: 30vh;
+}
+.menuContainerList {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.takeOfCombose {
+  background-color: rgb(255, 255, 255);
+  height: 16vh;
+  width: 16vh;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.exploreFullMenu {
+  width: 23vw;
+  height: 7vh;
+  background-color: rgb(111, 60, 47);
+
+  display: flex; /* put flex here */
+  justify-content: center; /* horizontally center */
+  align-items: center; /* vertically center */
+  text-align: center;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.exploreFullMenuText {
+  color: white;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.burgerBanner2 {
+  width: 85%;
+  display: flex;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+ margin-bottom: 40px;
+}
+.disclaimer {
+  font-size: 0.8rem;
+  width: 50%;
+  display: flex;
+
+  justify-content: center;
+  margin: auto;
+}
+footer {
+  background-color: rgb(50,50,49);
+}
+.footeMain{
+ background-color: rgb(50,50,49);
+ height: 60vh;
+}
+.footer{
+  width: 100%;
+  height: 40vh;
+ display: flex;
+ justify-content: center;
+ 
+}
+.footerContainer{
+  margin-top: 85px;
+  width: 85%;
+  height: 25vh;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.infoList{
+  color: rgb(176,176,176);
+  margin-top: 20px;
+  list-style: none;
+}
+.download{
+  display: flex;
+ 
+  list-style: none;
+   margin-top: 20px;
+}
+
+.line{
+  display: flex;
+  align-items: center;
+  margin: auto;
+height: 1px;
+ width: 85%;
+ background-color: rgb(66,66,65);
+}
+.navButtom{
+  width: 85%;
+  height: 15%;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: space-between;
+
+}
+.navLog{
+ background-color: rgb(50,50,49);
+ width: 55px;
+ height: 60px;
+}
+.social-icons {
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+.social-icons li { display: inline-block; }
+.social-icons svg { display: block; }
+
