@@ -15,45 +15,89 @@ body {
   padding: 30px 20px;
 }
 
-/* Input Container */
+
+/* ---------------------------------------------------- */
+/* INPUT CONTAINER */
+/* ---------------------------------------------------- */
+
 .inputContainer {
-  width: 85%;
+  width: 90%;
   display: flex;
   gap: 12px;
   justify-content: center;
   margin-bottom: 25px;
+  flex-wrap: wrap; /* ensures mobile breaks correctly */
 }
 
-#input, #textInput {
+
+/* All input fields */
+#input,
+#textInput,
+#color {
   height: 50px;
   border-radius: 12px;
   border: none;
   outline: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #fff;
   padding: 0 15px;
-  font-size: 1.05rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-#input, #textInput {
-  width: 30%;
+
+/* Placeholder mobile fix */
+#input::placeholder,
+#textInput::placeholder {
+  color: #555;
+  opacity: 1;              /* makes placeholder fully visible */
+  font-size: 1rem;         /* bigger text for readability */
 }
 
+
+/* Width control */
+#input,
+#textInput {
+  width: 28%;
+  min-width: 200px;
+}
+
+
+/* Color Picker FIX */
 #color {
-   height: 50px;
   width: 70px;
   padding: 0;
   cursor: pointer;
 }
 
+
+/* Remove default swatch border */
+#color::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 12px;
+}
+
+#color::-webkit-color-swatch {
+  border-radius: 12px;
+  border: none;
+}
+
+
+/* ---------------------------------------------------- */
+/* BUTTON */
+/* ---------------------------------------------------- */
+
 #button {
-  padding: 12px 25px;
+  height: 50px;
+  padding: 0 25px;
   background: #00ffb3;
   border-radius: 12px;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  transition: .3s;
+  font-size: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: .3s ease;
 }
 
 #button:hover {
@@ -61,17 +105,25 @@ body {
   background: #00d292;
 }
 
-/* Box Container */
+
+/* ---------------------------------------------------- */
+/* BOX CONTAINER */
+/* ---------------------------------------------------- */
+
 #boxContainer {
   width: 95%;
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 22px;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
-/* 🔥 Stylish Card Box */
+
+/* ---------------------------------------------------- */
+/* BOX STYLING */
+/* ---------------------------------------------------- */
+
 .square {
   height: 140px;
   width: 140px;
@@ -79,25 +131,57 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+
   font-size: 1.2rem;
   font-weight: 600;
+  color: white;
 
-  /* Modern Glass + Glow */
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.10);
+  backdrop-filter: blur(12px);
+  border: 2px solid rgba(255,255,255,0.3);
+
   box-shadow:
     0 6px 15px rgba(0,0,0,0.2),
-    inset 0 0 20px rgba(255,255,255,0.08);
+    inset 0 0 18px rgba(255,255,255,0.08);
 
   transition: 0.3s ease-in-out;
 }
 
-/* Hover effect */
 .square:hover {
   transform: translateY(-8px) scale(1.07);
   box-shadow:
-    0 12px 25px rgba(0,0,0,0.3),
+    0 12px 25px rgba(0,0,0,0.35),
     inset 0 0 25px rgba(255,255,255,0.12);
+}
+
+
+/* ---------------------------------------------------- */
+/* MOBILE RESPONSIVENESS */
+/* ---------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .inputContainer {
+    gap: 10px;
+  }
+
+  #input,
+  #textInput {
+    width: 85%;
+    height: 48px;
+  }
+
+  #color {
+    width: 60px;
+    height: 48px;
+  }
+
+  #button {
+    width: 85%;
+    height: 48px;
+  }
+
+  .square {
+    height: 120px;
+    width: 120px;
+  }
 }

@@ -1,24 +1,41 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.blubContainer .blub_image{
-  width: 40vw;
-  height: 70vh;
-  border: 2px solid black;
+/* Center container */
+.blubContainer {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: auto;
   margin-top: 20px;
-  
 }
 
-p{
+/* Bulb Image (Smaller & Responsive) */
+.blub_image {
+  width: 55%;
+  max-width: 300px;   /* PC/Laptop पर बड़ा नहीं होगा */
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* ON / OFF Text */
+p {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
- 
+  margin-top: 10px;
+}
+
+/* ⭐ Mobile View Adjustments */
+@media (max-width: 480px) {
+  .blub_image {
+    width: 70%;
+    max-width: 250px;  /* mobile पर even smaller */
+  }
+  p {
+    font-size: 1.6rem;
+  }
 }
