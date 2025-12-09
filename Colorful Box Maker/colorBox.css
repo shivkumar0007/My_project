@@ -15,22 +15,17 @@ body {
   padding: 30px 20px;
 }
 
-
-/* ---------------------------------------------------- */
-/* INPUT CONTAINER */
-/* ---------------------------------------------------- */
-
 .inputContainer {
   width: 90%;
   display: flex;
   gap: 12px;
   justify-content: center;
   margin-bottom: 25px;
-  flex-wrap: wrap; /* ensures mobile breaks correctly */
+  flex-wrap: wrap; 
 }
 
 
-/* All input fields */
+
 #input,
 #textInput,
 #color {
@@ -46,16 +41,16 @@ body {
 }
 
 
-/* Placeholder mobile fix */
+
 #input::placeholder,
 #textInput::placeholder {
   color: #555;
-  opacity: 1;              /* makes placeholder fully visible */
-  font-size: 1rem;         /* bigger text for readability */
+  opacity: 1;   
+  font-size: 1rem;         
 }
 
 
-/* Width control */
+
 #input,
 #textInput {
   width: 28%;
@@ -63,7 +58,7 @@ body {
 }
 
 
-/* Color Picker FIX */
+
 #color {
   width: 70px;
   padding: 0;
@@ -71,7 +66,7 @@ body {
 }
 
 
-/* Remove default swatch border */
+
 #color::-webkit-color-swatch-wrapper {
   padding: 0;
   border-radius: 12px;
@@ -82,10 +77,6 @@ body {
   border: none;
 }
 
-
-/* ---------------------------------------------------- */
-/* BUTTON */
-/* ---------------------------------------------------- */
 
 #button {
   height: 50px;
@@ -106,10 +97,6 @@ body {
 }
 
 
-/* ---------------------------------------------------- */
-/* BOX CONTAINER */
-/* ---------------------------------------------------- */
-
 #boxContainer {
   width: 95%;
   display: flex;
@@ -118,11 +105,6 @@ body {
   justify-content: center;
   margin-top: 20px;
 }
-
-
-/* ---------------------------------------------------- */
-/* BOX STYLING */
-/* ---------------------------------------------------- */
 
 .square {
   height: 140px;
@@ -154,10 +136,6 @@ body {
     inset 0 0 25px rgba(255,255,255,0.12);
 }
 
-
-/* ---------------------------------------------------- */
-/* MOBILE RESPONSIVENESS */
-/* ---------------------------------------------------- */
 
 @media (max-width: 480px) {
   .inputContainer {

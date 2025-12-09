@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* Center container */
+
 .blubContainer {
   width: 100%;
   display: flex;
@@ -12,16 +12,16 @@
   margin-top: 20px;
 }
 
-/* Bulb Image (Smaller & Responsive) */
+
 .blub_image {
   width: 55%;
-  max-width: 300px;   /* PC/Laptop पर बड़ा नहीं होगा */
+  max-width: 300px;   
   height: auto;
   border: 2px solid black;
   border-radius: 10px;
 }
 
-/* ON / OFF Text */
+
 p {
   text-align: center;
   font-size: 2rem;
@@ -29,11 +29,11 @@ p {
   margin-top: 10px;
 }
 
-/* ⭐ Mobile View Adjustments */
+
 @media (max-width: 480px) {
   .blub_image {
     width: 70%;
-    max-width: 250px;  /* mobile पर even smaller */
+    max-width: 250px;  
   }
   p {
     font-size: 1.6rem;
