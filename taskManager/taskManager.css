@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
+
 body{
-   background-color: #dee0e3;
+  background-color: #dee0e3;
 }
+
 .nav{
   height: 10vh;
   width: 100vw;
@@ -37,6 +40,9 @@ body{
   box-shadow: 
     0 4px 8px rgba(0, 0, 0, 0.15),
     0 6px 15px rgba(0, 0, 0, 0.20);
+}
+.color{
+  background-color: red;
 }
 .red{
   background-color: red;
@@ -71,9 +77,17 @@ body{
    box-shadow: 
     0 2px 4px rgba(0, 0, 0, 0.1),
     0 4px 10px rgba(0, 0, 0, 0.15);
+     transition: transform 0.25s ease;
+}
+
+.nav .add_ticket_button:hover,
+.nav .ticket_delete_button:hover,
+.nav .show_all_ticket:hover {
+  transform: scale(1.1);
 }
 
 .add_ticket_button::after {
+  
    content: "Add Ticket"; 
   position: absolute;
   bottom: -30px;
@@ -137,11 +151,18 @@ body{
   border-radius: 8px;
   overflow: hidden;  
   position: relative;        
-  background-color: #264777;
+  background-color: #3b5e91;
   margin-top: 15px;
   margin-left: 10px;
   cursor: pointer;
+ 
 }
+
+.ticket_text{
+  padding: 5px;
+  word-wrap: break-word;
+}
+
 .ticket_color{
    height: 4vh;
   width: 100%;
@@ -202,4 +223,12 @@ border-radius: 8px;
   box-shadow: 
     0 4px 8px rgba(0, 0, 0, 0.15),
     0 6px 15px rgba(0, 0, 0, 0.20);
+}
+.activeColor{
+  border: 2px solid white;
+}
+p{
+  padding: 5px;
+  color: white;
+  font-size: 1.2rem;
 }
