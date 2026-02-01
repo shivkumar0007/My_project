@@ -38,6 +38,7 @@ colorChiseContainer.addEventListener("click", function(e){
  // store to all task 
 let taskArrays = [];
 
+
 // ticket color 
 let colorFilter = ["red","blue","green","black"];
 
@@ -55,10 +56,10 @@ ticketText.addEventListener("keydown",function(event){
       id: Date.now(),
     };
     taskArrays.push(currentTaskObj);
+    localStorage.setItem("ticketObj",JSON.stringify(taskArrays));
    ticketCreatefunction(taskArrays);
 
     ticketCreateBoxHide();
- 
   }
  
 });
@@ -86,12 +87,11 @@ ticketText.addEventListener("keydown",function(event){
 
   
   if (!deleteFlag) return;
-
   // array se delete
   taskArrays = taskArrays.filter(function (task) {
     return task.id !== taskObj.id;
   });
-
+ localStorage.setItem("ticketObj",JSON.stringify(taskArrays));
   
   ticketCreatefunction(taskArrays);
 });
@@ -133,6 +133,7 @@ ticketText.addEventListener("keydown",function(event){
           textLockBtn.innerHTML = ticket_lock;
           ticketTextDiv.setAttribute("contenteditable", "false");
           taskObj.taskText = ticketTextDiv.innerText;
+          localStorage.setItem("ticketObj",JSON.stringify(taskArrays));
         }
         lockFlag=!lockFlag;
   })
@@ -174,3 +175,13 @@ ticketText.addEventListener("keydown",function(event){
   }
   ticketCreatefunction(sameColorTicket);
  });
+
+
+
+ (()=>{
+  let localStorageData = localStorage.getItem("ticketObj");
+  if(localStorageData){
+    taskArrays= JSON.parse(localStorageData);
+    ticketCreatefunction(taskArrays);
+  }
+})();
