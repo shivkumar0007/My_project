@@ -1,179 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Website Under Development</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Under Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta name="description" content="Official website under development. Online services and digital products coming soon.">
+    <meta
+      name="description"
+      content="Official website under development. Online services and digital products coming soon."
+    />
 
-<style>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        text-align: center;
+      }
 
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:white;
-text-align:center;
-}
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
 
-.hero{
-display:flex;
-align-items:center;
-justify-content:center;
-height:100vh;
-}
+      .box {
+        max-width: 520px;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
 
-.box{
-max-width:520px;
-padding:30px;
-background:rgba(0,0,0,0.45);
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,0.4);
-}
+      .tag {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 6px 14px;
+        background: #00c853;
+        color: #000;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: bold;
+      }
 
-.tag{
-display:inline-block;
-margin-top:12px;
-padding:6px 14px;
-background:#00c853;
-color:#000;
-border-radius:20px;
-font-size:13px;
-font-weight:bold;
-}
+      .projects-section {
+        padding: 60px 20px;
+      }
 
-.projects-section{
-padding:60px 20px;
-}
+      .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+      }
 
-.section-title{
-font-size:28px;
-margin-bottom:40px;
-}
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        max-width: 1100px;
+        margin: auto;
+      }
 
-.projects-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-max-width:1100px;
-margin:auto;
-}
+      .project-card {
+        background: #ffffff;
+        color: #000;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        padding-bottom: 20px;
+      }
 
-.project-card{
-background:#ffffff;
-color:#000;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 10px 20px rgba(0,0,0,0.3);
-padding-bottom:20px;
-}
+      .project-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
 
-.project-card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
+      .project-card h3 {
+        margin: 10px;
+      }
 
-.project-card h3{
-margin:10px;
-}
+      .project-card p {
+        padding: 0 10px;
+        font-size: 14px;
+      }
 
-.project-card p{
-padding:0 10px;
-font-size:14px;
-}
+      .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background: #00c853;
+        color: black;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PROJECT SECTION -->
 
-.btn{
-display:inline-block;
-margin-top:10px;
-padding:8px 16px;
-background:#00c853;
-color:black;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-}
+    <section class="projects-section">
+      <h2 class="section-title">HTML, CSS & JS Projects</h2>
 
-</style>
-</head>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <a href="./lightToggleProject/light.html" target="_blank">
+            <img src="./ThumbnailProjectImage/image.png" />
+          </a>
 
-<body>
+          <h3>Light Toggle</h3>
 
-<!-- PROJECT SECTION -->
+          <p>Light project click on, Low-medium & high-medium & off.</p>
 
-<section class="projects-section">
+          <a href="./lightToggleProject/light.html" class="btn" target="_blank"
+            >View Project</a
+          >
+        </div>
 
-<h2 class="section-title">HTML, CSS & JS Projects</h2>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <a href="./Colorful Box Maker/colorBox.html" target="_blank">
+            <img src="./ThumbnailProjectImage/colorBoxMaker.png" />
+          </a>
 
-<div class="projects-container">
+          <h3>Color Box Create</h3>
 
-<!-- Project 1 -->
-<div class="project-card">
+          <p>
+            Create multiple boxes with custom colors and text using simple
+            inputs.
+          </p>
 
-<a href="./lightToggleProject/light.html" target="_blank">
-<img src="./ThumbnailProjectImage/image.png">
-</a>
+          <a
+            href="./Colorful Box Maker/colorBox.html"
+            class="btn"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
 
-<h3>Light Toggle</h3>
+        <!-- Project 3 -->
+        <div class="project-card">
+          <a href="./TodoList/todoList.html" target="_blank">
+            <img src="./ThumbnailProjectImage/todoListThumbnail.png" />
+          </a>
 
-<p>Light project click on, Low-medium & high-medium & off.</p>
+          <h3>Todo List</h3>
 
-<a href="./lightToggleProject/light.html" class="btn" target="_blank">View Project</a>
+          <p>Create multiple Todo Lists with custom colors and text.</p>
 
-</div>
+          <a href="./TodoList/todoList.html" class="btn" target="_blank"
+            >View Project</a
+          >
+        </div>
 
+        <!-- Project 4 -->
+        <div class="project-card">
+          <a href="./taskManager/taskManager.html" target="_blank">
+            <img src="./ThumbnailProjectImage/taskManagerThumbnail.png" />
+          </a>
 
-<!-- Project 2 -->
-<div class="project-card">
+          <h3>Task Manager</h3>
 
-<a href="./Colorful Box Maker/colorBox.html" target="_blank">
-<img src="./ThumbnailProjectImage/colorBoxMaker.png">
-</a>
+          <p>Create multiple task manager boards with custom colors.</p>
 
-<h3>Color Box Create</h3>
-
-<p>Create multiple boxes with custom colors and text using simple inputs.</p>
-
-<a href="./Colorful Box Maker/colorBox.html" class="btn" target="_blank">View Project</a>
-
-</div>
-
-
-<!-- Project 3 -->
-<div class="project-card">
-
-<a href="./TodoList/todoList.html" target="_blank">
-<img src="./ThumbnailProjectImage/todoListThumbnail.png">
-</a>
-
-<h3>Todo List</h3>
-
-<p>Create multiple Todo Lists with custom colors and text.</p>
-
-<a href="./TodoList/todoList.html" class="btn" target="_blank">View Project</a>
-
-</div>
-
-
-<!-- Project 4 -->
-<div class="project-card">
-
-<a href="./taskManager/taskManager.html" target="_blank">
-<img src="./ThumbnailProjectImage/taskManagerThumbnail.png">
-</a>
-
-<h3>Task Manager</h3>
-
-<p>Create multiple task manager boards with custom colors.</p>
-
-<a href="./taskManager/taskManager.html" class="btn" target="_blank">View Project</a>
-
-</div>
-
-</div>
-
-</section>
-
-</body>
+          <a href="./taskManager/taskManager.html" class="btn" target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
