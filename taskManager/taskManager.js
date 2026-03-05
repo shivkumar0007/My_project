@@ -175,9 +175,6 @@ ticketText.addEventListener("keydown",function(event){
   }
   ticketCreatefunction(sameColorTicket);
  });
-
-
-
  (()=>{
   let localStorageData = localStorage.getItem("ticketObj");
   if(localStorageData){
